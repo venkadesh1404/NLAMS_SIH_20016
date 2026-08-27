@@ -1,0 +1,51 @@
+Project ID,Project Name,Project Type,Ministry,State,District,Required Land,Acquired Land,Start Date,Target Date,Status
+PRJ-001,NH-861 Expansion,Highway,Ministry of Heavy Industries,Maharashtra,Mumbai,19.8,19.8,2025-05-25,2028-05-15,Completed
+PRJ-002,NH-72 Expansion,Industrial Corridor,Ministry of Road Transport,Tamil Nadu,Lucknow,25.2,25.2,2025-04-30,2027-05-22,In Progress
+PRJ-003,NH-615 Expansion,Highway,Ministry of Road Transport,Uttar Pradesh,Coimbatore,96.0,47.879999999999995,2025-11-15,2029-04-19,Delayed
+PRJ-004,NH-215 Expansion,Rural Road,Ministry of Railways,Tamil Nadu,Coimbatore,99.5,15.972,2025-10-02,2029-12-11,Delayed
+PRJ-005,NH-88 Expansion,Industrial Corridor,Ministry of Road Transport,Tamil Nadu,Mumbai,97.7,14.707,2025-04-02,2029-05-02,In Progress
+PRJ-006,NH-872 Expansion,Rural Road,Ministry of Heavy Industries,Karnataka,Bengaluru,43.7,35.787,2025-02-27,2028-05-13,Completed
+PRJ-007,RURAL ROAD-150,Highway,Ministry of Heavy Industries,Uttar Pradesh,Coimbatore,80.5,72.774,2025-12-12,2030-01-18,Completed
+PRJ-008,NH-344 Expansion,Railway Line,Ministry of Road Transport,Uttar Pradesh,Pune,92.1,49.44500000000001,2025-08-17,2030-05-28,In Progress
+PRJ-009,RURAL ROAD-294,Industrial Corridor,Ministry of Heavy Industries,Karnataka,Lucknow,26.2,26.2,2025-04-27,2028-09-23,Delayed
+PRJ-010,NH-956 Expansion,Highway,Ministry of Heavy Industries,Maharashtra,Coimbatore,81.9,81.9,2025-11-14,2030-09-18,Planned
+PRJ-011,NH-460 Expansion,Railway Line,Ministry of Road Transport,Tamil Nadu,Coimbatore,78.0,10.95,2025-10-06,2029-12-05,Delayed
+PRJ-012,NH-253 Expansion,Railway Line,Ministry of Road Transport,Gujarat,Bengaluru,26.0,26.0,2025-05-07,2028-04-06,In Progress
+PRJ-013,NH-561 Expansion,Rural Road,Ministry of Heavy Industries,Tamil Nadu,Mumbai,67.9,63.760000000000005,2025-05-09,2028-01-21,Delayed
+PRJ-014,NH-511 Expansion,Highway,Ministry of Heavy Industries,Tamil Nadu,Mumbai,90.0,56.616,2025-02-27,2028-07-07,In Progress
+PRJ-015,NH-476 Expansion,Railway Line,Ministry of Heavy Industries,Maharashtra,Chennai,49.7,23.697999999999997,2025-05-02,2029-10-13,In Progress
+PRJ-016,RURAL ROAD-271,Industrial Corridor,Ministry of Railways,Tamil Nadu,Bengaluru,37.6,15.679999999999998,2025-01-01,2027-06-09,Delayed
+PRJ-017,NH-687 Expansion,Industrial Corridor,Ministry of Railways,Karnataka,Pune,91.5,20.169,2025-08-27,2029-12-25,In Progress
+PRJ-018,NH-876 Expansion,Rural Road,Ministry of Railways,Karnataka,Mumbai,60.3,29.735999999999997,2025-10-17,2029-09-05,In Progress
+PRJ-019,NH-832 Expansion,Railway Line,Ministry of Road Transport,Uttar Pradesh,Lucknow,99.5,54.858000000000004,2025-04-06,2028-04-19,Delayed
+PRJ-020,NH-485 Expansion,Highway,Ministry of Railways,Gujarat,Bengaluru,49.1,22.932000000000002,2025-05-06,2029-12-17,Delayed
+PRJ-021,NH-21 Expansion,Industrial Corridor,Ministry of Road Transport,Tamil Nadu,Coimbatore,23.4,23.4,2025-04-28,2029-03-18,Planned
+PRJ-022,NH-274 Expansion,Railway Line,Ministry of Road Transport,Tamil Nadu,Lucknow,29.4,29.4,2025-02-17,2030-01-18,Planned
+PRJ-023,RURAL ROAD-316,Railway Line,Ministry of Railways,Maharashtra,Lucknow,50.0,50.0,2025-03-30,2028-01-08,In Progress
+PRJ-024,NH-777 Expansion,Rural Road,Ministry of Railways,Karnataka,Coimbatore,73.9,48.724000000000004,2025-08-25,2028-09-24,In Progress
+PRJ-025,NH-898 Expansion,Industrial Corridor,Ministry of Railways,Gujarat,Bengaluru,13.2,13.2,2025-09-29,2027-10-10,In Progress
+PRJ-026,NH-367 Expansion,Industrial Corridor,Ministry of Heavy Industries,Uttar Pradesh,Coimbatore,78.7,11.169,2025-07-08,2028-11-17,Planned
+PRJ-027,NH-428 Expansion,Highway,Ministry of Railways,Karnataka,Chennai,55.9,43.983000000000004,2025-07-11,2029-08-02,Completed
+PRJ-028,NH-943 Expansion,Industrial Corridor,Ministry of Heavy Industries,Uttar Pradesh,Lucknow,98.2,50.552,2025-03-10,2027-04-13,Completed
+PRJ-029,NH-81 Expansion,Highway,Ministry of Road Transport,Maharashtra,Surat,56.9,26.135999999999996,2025-10-05,2029-09-30,Completed
+PRJ-030,NH-872 Expansion,Industrial Corridor,Ministry of Heavy Industries,Maharashtra,Surat,47.4,7.752,2025-12-15,2030-04-11,In Progress
+PRJ-031,RURAL ROAD-390,Rural Road,Ministry of Railways,Tamil Nadu,Pune,12.1,12.1,2025-09-04,2027-12-02,In Progress
+PRJ-032,NH-772 Expansion,Industrial Corridor,Ministry of Road Transport,Gujarat,Mumbai,84.9,36.669000000000004,2025-03-17,2029-04-30,In Progress
+PRJ-033,NH-703 Expansion,Highway,Ministry of Road Transport,Uttar Pradesh,Coimbatore,76.9,7.800000000000001,2025-06-03,2029-01-27,Planned
+PRJ-034,RURAL ROAD-44,Highway,Ministry of Road Transport,Karnataka,Coimbatore,13.7,13.332,2025-05-24,2030-01-17,In Progress
+PRJ-035,RURAL ROAD-446,Rural Road,Ministry of Heavy Industries,Maharashtra,Pune,32.9,26.255,2025-03-27,2030-01-11,Delayed
+PRJ-036,RURAL ROAD-351,Industrial Corridor,Ministry of Railways,Tamil Nadu,Pune,46.4,46.4,2025-07-04,2028-08-24,In Progress
+PRJ-037,RURAL ROAD-456,Industrial Corridor,Ministry of Road Transport,Tamil Nadu,Pune,66.2,56.60799999999999,2025-10-12,2028-02-03,In Progress
+PRJ-038,NH-252 Expansion,Rural Road,Ministry of Road Transport,Uttar Pradesh,Lucknow,53.7,53.7,2025-08-08,2029-04-15,In Progress
+PRJ-039,NH-296 Expansion,Industrial Corridor,Ministry of Road Transport,Maharashtra,Chennai,87.5,35.022,2025-03-10,2029-06-12,Completed
+PRJ-040,RURAL ROAD-237,Industrial Corridor,Ministry of Heavy Industries,Gujarat,Coimbatore,38.2,10.95,2025-02-16,2028-04-03,Planned
+PRJ-041,NH-53 Expansion,Highway,Ministry of Heavy Industries,Maharashtra,Lucknow,12.6,12.6,2025-04-04,2029-04-01,In Progress
+PRJ-042,NH-217 Expansion,Industrial Corridor,Ministry of Railways,Uttar Pradesh,Pune,32.5,32.5,2025-08-26,2030-06-11,In Progress
+PRJ-043,NH-380 Expansion,Industrial Corridor,Ministry of Heavy Industries,Uttar Pradesh,Coimbatore,37.6,37.6,2025-07-23,2029-08-21,Completed
+PRJ-044,NH-157 Expansion,Rural Road,Ministry of Road Transport,Maharashtra,Lucknow,89.7,46.81,2025-08-06,2029-06-11,In Progress
+PRJ-045,RURAL ROAD-65,Rural Road,Ministry of Railways,Uttar Pradesh,Chennai,70.8,20.608,2025-12-07,2029-03-07,Delayed
+PRJ-046,NH-521 Expansion,Railway Line,Ministry of Road Transport,Maharashtra,Lucknow,38.3,38.3,2025-02-08,2029-08-15,Completed
+PRJ-047,RURAL ROAD-492,Highway,Ministry of Road Transport,Karnataka,Chennai,97.8,50.714999999999996,2025-04-10,2027-10-18,In Progress
+PRJ-048,NH-63 Expansion,Industrial Corridor,Ministry of Heavy Industries,Maharashtra,Pune,58.0,10.25,2025-10-16,2029-10-23,In Progress
+PRJ-049,RURAL ROAD-81,Industrial Corridor,Ministry of Railways,Maharashtra,Chennai,55.2,43.833,2025-09-11,2030-05-15,Delayed
+PRJ-050,RURAL ROAD-419,Railway Line,Ministry of Heavy Industries,Uttar Pradesh,Coimbatore,92.8,49.27,2025-08-10,2030-05-14,In Progress

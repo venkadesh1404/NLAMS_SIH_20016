@@ -1,0 +1,79 @@
+﻿[
+    {
+        "id":  "U001",
+        "name":  "Arjun Mehta",
+        "email":  "central.mehta@nlams.gov.in",
+        "role":  "central_ministry",
+        "department":  "Ministry of Road Transport \u0026 Highways",
+        "designation":  "Joint Secretary (Land Admin)",
+        "state":  null,
+        "district":  null,
+        "avatarColor":  "#1e3a5f"
+    },
+    {
+        "id":  "U002",
+        "name":  "Sunita Rao",
+        "email":  "state.rao@nlams.gov.in",
+        "role":  "state_gov",
+        "department":  "PWD Tamil Nadu",
+        "designation":  "State Project Director",
+        "state":  "Tamil Nadu",
+        "district":  null,
+        "avatarColor":  "#2b6cb0"
+    },
+    {
+        "id":  "U003",
+        "name":  "Ramesh Iyer",
+        "email":  "district.iyer@nlams.gov.in",
+        "role":  "district_authority",
+        "department":  "District Collector Office",
+        "designation":  "District Collector \u0026 Magistrate",
+        "state":  "Tamil Nadu",
+        "district":  "Coimbatore",
+        "avatarColor":  "#2c7a7b"
+    },
+    {
+        "id":  "U004",
+        "name":  "Kavya Krishnan",
+        "email":  "pwd.krishnan@nlams.gov.in",
+        "role":  "pwd_agency",
+        "department":  "Infrastructure Engineering Cell",
+        "designation":  "Superintending Engineer",
+        "state":  "Tamil Nadu",
+        "district":  "Coimbatore",
+        "avatarColor":  "#2d3748"
+    },
+    {
+        "id":  "U005",
+        "name":  "Thomas Joseph",
+        "email":  "lao.joseph@nlams.gov.in",
+        "role":  "land_acquisition_officer",
+        "department":  "Revenue \u0026 Land Acquisition Authority",
+        "designation":  "Special Land Acquisition Officer (CALA)",
+        "state":  "Tamil Nadu",
+        "district":  "Coimbatore",
+        "avatarColor":  "#744210"
+    },
+    {
+        "id":  "U006",
+        "name":  "Meera Nair",
+        "email":  "rr.nair@nlams.gov.in",
+        "role":  "rr_officer",
+        "department":  "Rehabilitation \u0026 Resettlement Division",
+        "designation":  "Director (R\u0026R Operations)",
+        "state":  "Tamil Nadu",
+        "district":  "Coimbatore",
+        "avatarColor":  "#22543d"
+    },
+    {
+        "id":  "U007",
+        "name":  "Vikram Singh",
+        "email":  "admin.singh@nlams.gov.in",
+        "role":  "system_admin",
+        "department":  "NLAMS IT Infrastructure Cell",
+        "designation":  "Lead Security \u0026 System Administrator",
+        "state":  null,
+        "district":  null,
+        "avatarColor":  "#4a5568"
+    }
+]

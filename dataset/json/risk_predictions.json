@@ -1,0 +1,1452 @@
+﻿[
+    {
+        "projectId":  "PRJ-001",
+        "projectName":  "NH-861 Expansion",
+        "riskScore":  15,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project successfully completed and handed over to executing authority.",
+        "factors":  [
+                        {
+                            "weight":  0,
+                            "name":  "Compensation Pending",
+                            "value":  "0%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "R\u0026R Pending",
+                            "value":  "0%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-002",
+        "projectName":  "NH-72 Expansion",
+        "riskScore":  10,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project executing within optimal parameters. Proceed with standard milestone tracking.",
+        "factors":  [
+                        {
+                            "weight":  2,
+                            "name":  "Compensation Pending",
+                            "value":  "5%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  8,
+                            "name":  "R\u0026R Pending",
+                            "value":  "25%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-003",
+        "projectName":  "NH-615 Expansion",
+        "riskScore":  69,
+        "riskLevel":  "HIGH",
+        "recommendation":  "Prioritize compensation approval bottlenecks and district-level verification. Deploy additional land survey units.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "65.1%"
+                        },
+                        {
+                            "weight":  3,
+                            "name":  "Land Disputes",
+                            "value":  "2"
+                        },
+                        {
+                            "weight":  6,
+                            "name":  "Possession Delay",
+                            "value":  "28 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "85%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-004",
+        "projectName":  "NH-215 Expansion",
+        "riskScore":  73,
+        "riskLevel":  "HIGH",
+        "recommendation":  "Prioritize compensation approval bottlenecks and district-level verification. Deploy additional land survey units.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "88.7%"
+                        },
+                        {
+                            "weight":  3,
+                            "name":  "Land Disputes",
+                            "value":  "2"
+                        },
+                        {
+                            "weight":  6,
+                            "name":  "Possession Delay",
+                            "value":  "32 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "95.2%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-005",
+        "projectName":  "NH-88 Expansion",
+        "riskScore":  56,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "92.4%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  5,
+                            "name":  "Possession Delay",
+                            "value":  "25 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "100%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-006",
+        "projectName":  "NH-872 Expansion",
+        "riskScore":  15,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project successfully completed and handed over to executing authority.",
+        "factors":  [
+                        {
+                            "weight":  0,
+                            "name":  "Compensation Pending",
+                            "value":  "0%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "R\u0026R Pending",
+                            "value":  "0%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-007",
+        "projectName":  "RURAL ROAD-150",
+        "riskScore":  15,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project successfully completed and handed over to executing authority.",
+        "factors":  [
+                        {
+                            "weight":  0,
+                            "name":  "Compensation Pending",
+                            "value":  "0%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "R\u0026R Pending",
+                            "value":  "0%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-008",
+        "projectName":  "NH-344 Expansion",
+        "riskScore":  52,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "59.7%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  5,
+                            "name":  "Possession Delay",
+                            "value":  "26 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "89.3%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-009",
+        "projectName":  "RURAL ROAD-294",
+        "riskScore":  56,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  15,
+                            "name":  "Compensation Pending",
+                            "value":  "30%"
+                        },
+                        {
+                            "weight":  4,
+                            "name":  "Land Disputes",
+                            "value":  "3"
+                        },
+                        {
+                            "weight":  7,
+                            "name":  "Possession Delay",
+                            "value":  "37 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "70%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-010",
+        "projectName":  "NH-956 Expansion",
+        "riskScore":  45,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "50%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  4,
+                            "name":  "Possession Delay",
+                            "value":  "20 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "100%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-011",
+        "projectName":  "NH-460 Expansion",
+        "riskScore":  71,
+        "riskLevel":  "HIGH",
+        "recommendation":  "Prioritize compensation approval bottlenecks and district-level verification. Deploy additional land survey units.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "90.2%"
+                        },
+                        {
+                            "weight":  2,
+                            "name":  "Land Disputes",
+                            "value":  "1"
+                        },
+                        {
+                            "weight":  4,
+                            "name":  "Possession Delay",
+                            "value":  "20 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "95.8%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-012",
+        "projectName":  "NH-253 Expansion",
+        "riskScore":  12,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project executing within optimal parameters. Proceed with standard milestone tracking.",
+        "factors":  [
+                        {
+                            "weight":  2,
+                            "name":  "Compensation Pending",
+                            "value":  "5%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  8,
+                            "name":  "R\u0026R Pending",
+                            "value":  "25%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-013",
+        "projectName":  "NH-561 Expansion",
+        "riskScore":  55,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  17,
+                            "name":  "Compensation Pending",
+                            "value":  "34.3%"
+                        },
+                        {
+                            "weight":  3,
+                            "name":  "Land Disputes",
+                            "value":  "2"
+                        },
+                        {
+                            "weight":  7,
+                            "name":  "Possession Delay",
+                            "value":  "36 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "71.8%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-014",
+        "projectName":  "NH-511 Expansion",
+        "riskScore":  45,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  22,
+                            "name":  "Compensation Pending",
+                            "value":  "43.4%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  4,
+                            "name":  "Possession Delay",
+                            "value":  "21 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "68.6%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-015",
+        "projectName":  "NH-476 Expansion",
+        "riskScore":  52,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "64.2%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  6,
+                            "name":  "Possession Delay",
+                            "value":  "28 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "90.5%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-016",
+        "projectName":  "RURAL ROAD-271",
+        "riskScore":  69,
+        "riskLevel":  "HIGH",
+        "recommendation":  "Prioritize compensation approval bottlenecks and district-level verification. Deploy additional land survey units.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "70.8%"
+                        },
+                        {
+                            "weight":  4,
+                            "name":  "Land Disputes",
+                            "value":  "3"
+                        },
+                        {
+                            "weight":  4,
+                            "name":  "Possession Delay",
+                            "value":  "21 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "87.5%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-017",
+        "projectName":  "NH-687 Expansion",
+        "riskScore":  54,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "89%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  4,
+                            "name":  "Possession Delay",
+                            "value":  "22 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "100%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-018",
+        "projectName":  "NH-876 Expansion",
+        "riskScore":  51,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "63%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  4,
+                            "name":  "Possession Delay",
+                            "value":  "18 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "90.1%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-019",
+        "projectName":  "NH-832 Expansion",
+        "riskScore":  62,
+        "riskLevel":  "HIGH",
+        "recommendation":  "Prioritize compensation approval bottlenecks and district-level verification. Deploy additional land survey units.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "61.4%"
+                        },
+                        {
+                            "weight":  2,
+                            "name":  "Land Disputes",
+                            "value":  "1"
+                        },
+                        {
+                            "weight":  4,
+                            "name":  "Possession Delay",
+                            "value":  "21 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "83.5%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-020",
+        "projectName":  "NH-485 Expansion",
+        "riskScore":  69,
+        "riskLevel":  "HIGH",
+        "recommendation":  "Prioritize compensation approval bottlenecks and district-level verification. Deploy additional land survey units.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "67.3%"
+                        },
+                        {
+                            "weight":  3,
+                            "name":  "Land Disputes",
+                            "value":  "2"
+                        },
+                        {
+                            "weight":  5,
+                            "name":  "Possession Delay",
+                            "value":  "27 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "86%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-021",
+        "projectName":  "NH-21 Expansion",
+        "riskScore":  46,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "50%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  5,
+                            "name":  "Possession Delay",
+                            "value":  "25 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "100%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-022",
+        "projectName":  "NH-274 Expansion",
+        "riskScore":  47,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "50%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  6,
+                            "name":  "Possession Delay",
+                            "value":  "31 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "100%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-023",
+        "projectName":  "RURAL ROAD-316",
+        "riskScore":  12,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project executing within optimal parameters. Proceed with standard milestone tracking.",
+        "factors":  [
+                        {
+                            "weight":  2,
+                            "name":  "Compensation Pending",
+                            "value":  "5%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  8,
+                            "name":  "R\u0026R Pending",
+                            "value":  "25%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-024",
+        "projectName":  "NH-777 Expansion",
+        "riskScore":  46,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  20,
+                            "name":  "Compensation Pending",
+                            "value":  "40.7%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  6,
+                            "name":  "Possession Delay",
+                            "value":  "31 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "67%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-025",
+        "projectName":  "NH-898 Expansion",
+        "riskScore":  12,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project executing within optimal parameters. Proceed with standard milestone tracking.",
+        "factors":  [
+                        {
+                            "weight":  2,
+                            "name":  "Compensation Pending",
+                            "value":  "5%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  8,
+                            "name":  "R\u0026R Pending",
+                            "value":  "25%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-026",
+        "projectName":  "NH-367 Expansion",
+        "riskScore":  53,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "92.9%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  2,
+                            "name":  "Possession Delay",
+                            "value":  "11 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "100%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-027",
+        "projectName":  "NH-428 Expansion",
+        "riskScore":  15,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project successfully completed and handed over to executing authority.",
+        "factors":  [
+                        {
+                            "weight":  0,
+                            "name":  "Compensation Pending",
+                            "value":  "0%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "R\u0026R Pending",
+                            "value":  "0%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-028",
+        "projectName":  "NH-943 Expansion",
+        "riskScore":  15,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project successfully completed and handed over to executing authority.",
+        "factors":  [
+                        {
+                            "weight":  0,
+                            "name":  "Compensation Pending",
+                            "value":  "0%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "R\u0026R Pending",
+                            "value":  "0%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-029",
+        "projectName":  "NH-81 Expansion",
+        "riskScore":  15,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project successfully completed and handed over to executing authority.",
+        "factors":  [
+                        {
+                            "weight":  0,
+                            "name":  "Compensation Pending",
+                            "value":  "0%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "R\u0026R Pending",
+                            "value":  "0%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-030",
+        "projectName":  "NH-872 Expansion",
+        "riskScore":  55,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "91.8%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  6,
+                            "name":  "Possession Delay",
+                            "value":  "32 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "100%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-031",
+        "projectName":  "RURAL ROAD-390",
+        "riskScore":  10,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project executing within optimal parameters. Proceed with standard milestone tracking.",
+        "factors":  [
+                        {
+                            "weight":  2,
+                            "name":  "Compensation Pending",
+                            "value":  "5%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  8,
+                            "name":  "R\u0026R Pending",
+                            "value":  "25%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-032",
+        "projectName":  "NH-772 Expansion",
+        "riskScore":  53,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "67.6%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  6,
+                            "name":  "Possession Delay",
+                            "value":  "29 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "91.4%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-033",
+        "projectName":  "NH-703 Expansion",
+        "riskScore":  55,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "95%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  4,
+                            "name":  "Possession Delay",
+                            "value":  "21 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "100%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-034",
+        "projectName":  "RURAL ROAD-44",
+        "riskScore":  14,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project executing within optimal parameters. Proceed with standard milestone tracking.",
+        "factors":  [
+                        {
+                            "weight":  4,
+                            "name":  "Compensation Pending",
+                            "value":  "7.59999999999999%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  8,
+                            "name":  "R\u0026R Pending",
+                            "value":  "27%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-035",
+        "projectName":  "RURAL ROAD-446",
+        "riskScore":  60,
+        "riskLevel":  "HIGH",
+        "recommendation":  "Prioritize compensation approval bottlenecks and district-level verification. Deploy additional land survey units.",
+        "factors":  [
+                        {
+                            "weight":  22,
+                            "name":  "Compensation Pending",
+                            "value":  "44.1%"
+                        },
+                        {
+                            "weight":  4,
+                            "name":  "Land Disputes",
+                            "value":  "3"
+                        },
+                        {
+                            "weight":  3,
+                            "name":  "Possession Delay",
+                            "value":  "14 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "76.1%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-036",
+        "projectName":  "RURAL ROAD-351",
+        "riskScore":  12,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project executing within optimal parameters. Proceed with standard milestone tracking.",
+        "factors":  [
+                        {
+                            "weight":  2,
+                            "name":  "Compensation Pending",
+                            "value":  "5%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  8,
+                            "name":  "R\u0026R Pending",
+                            "value":  "25%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-037",
+        "projectName":  "RURAL ROAD-456",
+        "riskScore":  23,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project executing within optimal parameters. Proceed with standard milestone tracking.",
+        "factors":  [
+                        {
+                            "weight":  9,
+                            "name":  "Compensation Pending",
+                            "value":  "18.8%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  11,
+                            "name":  "R\u0026R Pending",
+                            "value":  "35.9%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-038",
+        "projectName":  "NH-252 Expansion",
+        "riskScore":  12,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project executing within optimal parameters. Proceed with standard milestone tracking.",
+        "factors":  [
+                        {
+                            "weight":  2,
+                            "name":  "Compensation Pending",
+                            "value":  "5%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  8,
+                            "name":  "R\u0026R Pending",
+                            "value":  "25%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-039",
+        "projectName":  "NH-296 Expansion",
+        "riskScore":  15,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project successfully completed and handed over to executing authority.",
+        "factors":  [
+                        {
+                            "weight":  0,
+                            "name":  "Compensation Pending",
+                            "value":  "0%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "R\u0026R Pending",
+                            "value":  "0%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-040",
+        "projectName":  "RURAL ROAD-237",
+        "riskScore":  53,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "85.6%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  5,
+                            "name":  "Possession Delay",
+                            "value":  "24 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "100%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-041",
+        "projectName":  "NH-53 Expansion",
+        "riskScore":  12,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project executing within optimal parameters. Proceed with standard milestone tracking.",
+        "factors":  [
+                        {
+                            "weight":  2,
+                            "name":  "Compensation Pending",
+                            "value":  "5%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  8,
+                            "name":  "R\u0026R Pending",
+                            "value":  "25%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-042",
+        "projectName":  "NH-217 Expansion",
+        "riskScore":  12,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project executing within optimal parameters. Proceed with standard milestone tracking.",
+        "factors":  [
+                        {
+                            "weight":  2,
+                            "name":  "Compensation Pending",
+                            "value":  "5%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  8,
+                            "name":  "R\u0026R Pending",
+                            "value":  "25%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-043",
+        "projectName":  "NH-380 Expansion",
+        "riskScore":  15,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project successfully completed and handed over to executing authority.",
+        "factors":  [
+                        {
+                            "weight":  0,
+                            "name":  "Compensation Pending",
+                            "value":  "0%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "R\u0026R Pending",
+                            "value":  "0%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-044",
+        "projectName":  "NH-157 Expansion",
+        "riskScore":  53,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "60.8%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  7,
+                            "name":  "Possession Delay",
+                            "value":  "33 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "89.6%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-045",
+        "projectName":  "RURAL ROAD-65",
+        "riskScore":  73,
+        "riskLevel":  "HIGH",
+        "recommendation":  "Prioritize compensation approval bottlenecks and district-level verification. Deploy additional land survey units.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "79.6%"
+                        },
+                        {
+                            "weight":  4,
+                            "name":  "Land Disputes",
+                            "value":  "3"
+                        },
+                        {
+                            "weight":  8,
+                            "name":  "Possession Delay",
+                            "value":  "38 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "91.3%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-046",
+        "projectName":  "NH-521 Expansion",
+        "riskScore":  15,
+        "riskLevel":  "LOW",
+        "recommendation":  "Project successfully completed and handed over to executing authority.",
+        "factors":  [
+                        {
+                            "weight":  0,
+                            "name":  "Compensation Pending",
+                            "value":  "0%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Possession Delay",
+                            "value":  "0 days"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "R\u0026R Pending",
+                            "value":  "0%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-047",
+        "projectName":  "RURAL ROAD-492",
+        "riskScore":  51,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "61.1%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  6,
+                            "name":  "Possession Delay",
+                            "value":  "29 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "89.6%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-048",
+        "projectName":  "NH-63 Expansion",
+        "riskScore":  54,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "91.2%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  4,
+                            "name":  "Possession Delay",
+                            "value":  "19 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "100%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-049",
+        "projectName":  "RURAL ROAD-81",
+        "riskScore":  63,
+        "riskLevel":  "HIGH",
+        "recommendation":  "Prioritize compensation approval bottlenecks and district-level verification. Deploy additional land survey units.",
+        "factors":  [
+                        {
+                            "weight":  22,
+                            "name":  "Compensation Pending",
+                            "value":  "44.4%"
+                        },
+                        {
+                            "weight":  3,
+                            "name":  "Land Disputes",
+                            "value":  "2"
+                        },
+                        {
+                            "weight":  3,
+                            "name":  "Possession Delay",
+                            "value":  "15 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "76.2%"
+                        }
+                    ]
+    },
+    {
+        "projectId":  "PRJ-050",
+        "projectName":  "RURAL ROAD-419",
+        "riskScore":  48,
+        "riskLevel":  "MEDIUM",
+        "recommendation":  "Maintain proactive monitoring of pending revenue records and schedule timely joint possession surveys.",
+        "factors":  [
+                        {
+                            "weight":  25,
+                            "name":  "Compensation Pending",
+                            "value":  "60.2%"
+                        },
+                        {
+                            "weight":  0,
+                            "name":  "Land Disputes",
+                            "value":  "0"
+                        },
+                        {
+                            "weight":  3,
+                            "name":  "Possession Delay",
+                            "value":  "15 days"
+                        },
+                        {
+                            "weight":  15,
+                            "name":  "R\u0026R Pending",
+                            "value":  "89.4%"
+                        }
+                    ]
+    }
+]

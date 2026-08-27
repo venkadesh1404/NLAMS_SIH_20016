@@ -1,0 +1,123 @@
+﻿[
+    {
+        "id":  "ALT-0001",
+        "type":  "Delayed Approval",
+        "severity":  "High",
+        "projectId":  "PRJ-003",
+        "projectName":  "NH-615 Expansion",
+        "description":  "SLA Alert: Critical acquisition bottleneck identified for NH-615 Expansion. Target date 2029-04-19 at risk.",
+        "createdDate":  "2026-08-25 10:30",
+        "escalationLevel":  "District",
+        "status":  "Open"
+    },
+    {
+        "id":  "ALT-0002",
+        "type":  "Delayed Approval",
+        "severity":  "High",
+        "projectId":  "PRJ-004",
+        "projectName":  "NH-215 Expansion",
+        "description":  "SLA Alert: Critical acquisition bottleneck identified for NH-215 Expansion. Target date 2029-12-11 at risk.",
+        "createdDate":  "2026-08-25 10:30",
+        "escalationLevel":  "District",
+        "status":  "Open"
+    },
+    {
+        "id":  "ALT-0003",
+        "type":  "Delayed Approval",
+        "severity":  "High",
+        "projectId":  "PRJ-009",
+        "projectName":  "RURAL ROAD-294",
+        "description":  "SLA Alert: Critical acquisition bottleneck identified for RURAL ROAD-294. Target date 2028-09-23 at risk.",
+        "createdDate":  "2026-08-25 10:30",
+        "escalationLevel":  "District",
+        "status":  "Open"
+    },
+    {
+        "id":  "ALT-0004",
+        "type":  "Delayed Approval",
+        "severity":  "High",
+        "projectId":  "PRJ-011",
+        "projectName":  "NH-460 Expansion",
+        "description":  "SLA Alert: Critical acquisition bottleneck identified for NH-460 Expansion. Target date 2029-12-05 at risk.",
+        "createdDate":  "2026-08-25 10:30",
+        "escalationLevel":  "District",
+        "status":  "Open"
+    },
+    {
+        "id":  "ALT-0005",
+        "type":  "Delayed Approval",
+        "severity":  "High",
+        "projectId":  "PRJ-013",
+        "projectName":  "NH-561 Expansion",
+        "description":  "SLA Alert: Critical acquisition bottleneck identified for NH-561 Expansion. Target date 2028-01-21 at risk.",
+        "createdDate":  "2026-08-25 10:30",
+        "escalationLevel":  "District",
+        "status":  "Open"
+    },
+    {
+        "id":  "ALT-0006",
+        "type":  "Delayed Approval",
+        "severity":  "High",
+        "projectId":  "PRJ-016",
+        "projectName":  "RURAL ROAD-271",
+        "description":  "SLA Alert: Critical acquisition bottleneck identified for RURAL ROAD-271. Target date 2027-06-09 at risk.",
+        "createdDate":  "2026-08-25 10:30",
+        "escalationLevel":  "District",
+        "status":  "Open"
+    },
+    {
+        "id":  "ALT-0007",
+        "type":  "Delayed Approval",
+        "severity":  "High",
+        "projectId":  "PRJ-019",
+        "projectName":  "NH-832 Expansion",
+        "description":  "SLA Alert: Critical acquisition bottleneck identified for NH-832 Expansion. Target date 2028-04-19 at risk.",
+        "createdDate":  "2026-08-25 10:30",
+        "escalationLevel":  "District",
+        "status":  "Open"
+    },
+    {
+        "id":  "ALT-0008",
+        "type":  "Delayed Approval",
+        "severity":  "High",
+        "projectId":  "PRJ-020",
+        "projectName":  "NH-485 Expansion",
+        "description":  "SLA Alert: Critical acquisition bottleneck identified for NH-485 Expansion. Target date 2029-12-17 at risk.",
+        "createdDate":  "2026-08-25 10:30",
+        "escalationLevel":  "District",
+        "status":  "Open"
+    },
+    {
+        "id":  "ALT-0009",
+        "type":  "Delayed Approval",
+        "severity":  "High",
+        "projectId":  "PRJ-035",
+        "projectName":  "RURAL ROAD-446",
+        "description":  "SLA Alert: Critical acquisition bottleneck identified for RURAL ROAD-446. Target date 2030-01-11 at risk.",
+        "createdDate":  "2026-08-25 10:30",
+        "escalationLevel":  "District",
+        "status":  "Open"
+    },
+    {
+        "id":  "ALT-0010",
+        "type":  "Delayed Approval",
+        "severity":  "High",
+        "projectId":  "PRJ-045",
+        "projectName":  "RURAL ROAD-65",
+        "description":  "SLA Alert: Critical acquisition bottleneck identified for RURAL ROAD-65. Target date 2029-03-07 at risk.",
+        "createdDate":  "2026-08-25 10:30",
+        "escalationLevel":  "District",
+        "status":  "Open"
+    },
+    {
+        "id":  "ALT-0011",
+        "type":  "Delayed Approval",
+        "severity":  "High",
+        "projectId":  "PRJ-049",
+        "projectName":  "RURAL ROAD-81",
+        "description":  "SLA Alert: Critical acquisition bottleneck identified for RURAL ROAD-81. Target date 2030-05-15 at risk.",
+        "createdDate":  "2026-08-25 10:30",
+        "escalationLevel":  "District",
+        "status":  "Open"
+    }
+]

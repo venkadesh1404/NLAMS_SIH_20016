@@ -1,0 +1,252 @@
+﻿[
+    {
+        "id":  "SYN-0001",
+        "module":  "Land Verification",
+        "recordId":  "LP-0068-MH",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0002",
+        "module":  "Land Verification",
+        "recordId":  "LP-0012-TN",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0003",
+        "module":  "Land Verification",
+        "recordId":  "LP-0042-MH",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0004",
+        "module":  "Land Verification",
+        "recordId":  "LP-0042-MH",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0005",
+        "module":  "Land Verification",
+        "recordId":  "LP-0182-TN",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0006",
+        "module":  "Land Verification",
+        "recordId":  "LP-0081-MH",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0007",
+        "module":  "Land Verification",
+        "recordId":  "LP-0188-UP",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0008",
+        "module":  "Land Verification",
+        "recordId":  "LP-0135-GJ",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0009",
+        "module":  "Land Verification",
+        "recordId":  "LP-0027-KA",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0010",
+        "module":  "Land Verification",
+        "recordId":  "LP-0134-UP",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0011",
+        "module":  "Land Verification",
+        "recordId":  "LP-0062-MH",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0012",
+        "module":  "Land Verification",
+        "recordId":  "LP-0033-TN",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0013",
+        "module":  "Land Verification",
+        "recordId":  "LP-0170-MH",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0014",
+        "module":  "Land Verification",
+        "recordId":  "LP-0001-MH",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0015",
+        "module":  "Land Verification",
+        "recordId":  "LP-0058-KA",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0016",
+        "module":  "Land Verification",
+        "recordId":  "LP-0074-TN",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0017",
+        "module":  "Land Verification",
+        "recordId":  "LP-0162-MH",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0018",
+        "module":  "Land Verification",
+        "recordId":  "LP-0189-UP",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0019",
+        "module":  "Land Verification",
+        "recordId":  "LP-0229-TN",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0020",
+        "module":  "Land Verification",
+        "recordId":  "LP-0008-TN",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0021",
+        "module":  "Land Verification",
+        "recordId":  "LP-0211-UP",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0022",
+        "module":  "Land Verification",
+        "recordId":  "LP-0096-UP",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0023",
+        "module":  "Land Verification",
+        "recordId":  "LP-0206-TN",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0024",
+        "module":  "Land Verification",
+        "recordId":  "LP-0146-MH",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    },
+    {
+        "id":  "SYN-0025",
+        "module":  "Land Verification",
+        "recordId":  "LP-0023-MH",
+        "action":  "UPDATE",
+        "createdTime":  "2026-08-27 11:30",
+        "retryCount":  0,
+        "status":  "Synchronized",
+        "lastError":  null
+    }
+]
