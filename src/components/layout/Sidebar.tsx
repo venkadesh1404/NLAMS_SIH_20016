@@ -114,13 +114,13 @@ export default function Sidebar({ open, onClose }: { open: boolean; onClose: () 
 
 function getPermsForRole(role: string): string[] {
   const map: Record<string, string[]> = {
-    central_ministry: ['dashboard', 'projects', 'proposals', 'parcels', 'gis', 'compensation', 'possession', 'families', 'rehabilitation', 'notifications', 'awards', 'alerts', 'reports', 'analytics', 'workflow', 'documents', 'audit', 'admin', 'admin-users', 'admin-roles', 'admin-settings', 'admin-pwa', 'admin-health', 'sync'],
-    state_gov: ['dashboard', 'projects', 'proposals', 'parcels', 'gis', 'compensation', 'possession', 'families', 'rehabilitation', 'notifications', 'awards', 'alerts', 'reports', 'workflow', 'documents'],
-    district_authority: ['dashboard', 'projects', 'proposals', 'parcels', 'gis', 'compensation', 'possession', 'families', 'rehabilitation', 'notifications', 'awards', 'alerts', 'reports', 'workflow', 'documents'],
-    pwd_agency: ['dashboard', 'projects', 'proposals', 'parcels', 'gis', 'documents', 'workflow'],
-    land_acquisition_officer: ['dashboard', 'projects', 'parcels', 'gis', 'notifications', 'awards', 'compensation', 'possession', 'workflow', 'documents'],
-    rr_officer: ['dashboard', 'projects', 'families', 'rehabilitation', 'workflow', 'documents'],
-    system_admin: ['dashboard', 'admin', 'audit', 'sync', 'admin-users', 'admin-roles', 'admin-settings', 'admin-pwa', 'admin-health'],
+    central_ministry: ['dashboard', 'projects', 'proposals', 'parcels', 'gis', 'compensation', 'possession', 'families', 'rehabilitation', 'notifications', 'awards', 'alerts', 'reports', 'analytics', 'workflow', 'documents', 'audit', 'admin', 'sync', 'admin-users', 'admin-roles', 'admin-settings', 'admin-pwa', 'admin-health'],
+    state_gov: ['dashboard', 'projects', 'proposals', 'parcels', 'gis', 'compensation', 'possession', 'families', 'rehabilitation', 'notifications', 'awards', 'alerts', 'reports', 'workflow', 'documents', 'analytics', 'audit', 'sync'],
+    district_authority: ['dashboard', 'projects', 'proposals', 'parcels', 'gis', 'compensation', 'possession', 'families', 'rehabilitation', 'notifications', 'awards', 'alerts', 'reports', 'workflow', 'documents', 'analytics', 'audit', 'sync'],
+    pwd_agency: ['dashboard', 'projects', 'proposals', 'parcels', 'gis', 'documents', 'workflow', 'notifications', 'reports', 'audit', 'sync'],
+    land_acquisition_officer: ['dashboard', 'projects', 'proposals', 'parcels', 'gis', 'notifications', 'awards', 'compensation', 'possession', 'workflow', 'documents', 'reports', 'audit', 'sync'],
+    rr_officer: ['dashboard', 'projects', 'proposals', 'families', 'rehabilitation', 'workflow', 'documents', 'notifications', 'reports', 'audit', 'sync'],
+    system_admin: ['dashboard', 'projects', 'proposals', 'parcels', 'gis', 'compensation', 'possession', 'families', 'rehabilitation', 'notifications', 'awards', 'alerts', 'reports', 'analytics', 'workflow', 'documents', 'admin', 'audit', 'sync', 'admin-users', 'admin-roles', 'admin-settings', 'admin-pwa', 'admin-health'],
   };
   return map[role] || [];
 }

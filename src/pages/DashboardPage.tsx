@@ -1,24 +1,54 @@
-import { useState, useMemo } from 'react';
-import { DATA, STATES } from '@/data/mockData';
+import { useState, useMemo, useEffect } from 'react';
+import { ApiService } from '@/services/apiService';
+import { STATES } from '@/data/mockData';
 import { PageHeader, KpiCard, Card, FilterBar, Select, StatusBadge, ProgressBar } from '@/components/ui';
-import { Building2, MapPin, IndianRupee, Users, KeyRound, HeartHandshake, FileCheck, AlertTriangle, TrendingUp, Download } from 'lucide-react';
+import { Building2, MapPin, IndianRupee, Users, KeyRound, HeartHandshake, FileCheck, AlertTriangle, Download, RefreshCw } from 'lucide-react';
+import { exportToCsv } from '@/utils/exportUtils';
 import {
   BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
-  PieChart, Pie, Cell, Legend, LineChart, Line, Area, AreaChart,
+  PieChart, Pie, Cell, Legend
 } from 'recharts';
+import type { Project, Alert, CompensationRecord, AffectedFamily } from '@/types';
 
 const STAGE_FLOW = ['Proposal', 'Scrutiny', 'Approval', 'Notification', 'Award', 'Compensation', 'Possession', 'R&R', 'Completion'];
-
 const PROJECT_TYPES = ['Highways', 'Railways', 'Irrigation', 'Industrial Corridor', 'Urban Development', 'Renewable Energy', 'Public Infrastructure', 'Other'];
-
 const COLORS = ['#1e3a5f', '#2b6cb0', '#2c7a7b', '#744210', '#22543d', '#718096', '#975a16', '#553c9a'];
 
 export default function DashboardPage() {
-  const { projects, compensation, families, alerts } = DATA;
+  const [projects, setProjects] = useState<Project[]>([]);
+  const [alerts, setAlerts] = useState<Alert[]>([]);
+  const [compensation, setCompensation] = useState<CompensationRecord[]>([]);
+  const [families, setFamilies] = useState<AffectedFamily[]>([]);
+  const [loading, setLoading] = useState(true);
+
   const [fy, setFy] = useState('2026-27');
   const [stateFilter, setStateFilter] = useState('');
   const [typeFilter, setTypeFilter] = useState('');
   const [statusFilter, setStatusFilter] = useState('');
+
+  const loadData = async () => {
+    setLoading(true);
+    try {
+      const [projs, alrts, comps, fams] = await Promise.all([
+        ApiService.getProjects(),
+        ApiService.getAlerts(),
+        ApiService.getCompensation(),
+        ApiService.getFamilies(),
+      ]);
+      setProjects(projs);
+      setAlerts(alrts);
+      setCompensation(comps);
+      setFamilies(fams);
+    } catch (e) {
+      console.error('Failed to load dashboard data', e);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    loadData();
+  }, []);
 
   const filtered = useMemo(() => {
     return projects.filter((p) => {
@@ -97,12 +127,51 @@ export default function DashboardPage() {
 
   const criticalAlerts = alerts.filter((a) => a.severity === 'Critical' || a.severity === 'High').slice(0, 5);
 
+  const handleExportDashboardCsv = () => {
+    exportToCsv(
+      filtered,
+      `NLAMS_Executive_Dashboard_Summary_${new Date().toISOString().split('T')[0]}`,
+      [
+        { key: 'id', label: 'Project ID' },
+        { key: 'name', label: 'Project Name' },
+        { key: 'state', label: 'State' },
+        { key: 'district', label: 'District' },
+        { key: 'type', label: 'Type' },
+        { key: 'stage', label: 'Stage' },
+        { key: 'landRequired', label: 'Land Required (ha)' },
+        { key: 'landAcquired', label: 'Land Acquired (ha)' },
+        { key: 'acquisitionPct', label: 'Acquisition %' },
+        { key: 'compensationPct', label: 'Compensation %' },
+        { key: 'possessionPct', label: 'Possession %' },
+        { key: 'rrPct', label: 'R&R %' },
+        { key: 'status', label: 'Status' },
+        { key: 'risk', label: 'Risk' },
+        { key: 'riskScore', label: 'Risk Score' },
+      ]
+    );
+  };
+
   return (
-    <div>
+    <div className="space-y-4">
       <PageHeader
         title="National Land Acquisition Monitoring Dashboard"
-        subtitle="Real-time overview of land acquisition lifecycle across all states and districts"
-        actions={<button className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 bg-white border border-slate-300 rounded text-slate-700 hover:bg-slate-50"><Download className="w-3.5 h-3.5" /> Export Dashboard</button>}
+        subtitle="Real-time end-to-end digital monitoring of land acquisition, financial compensation, and R&R decision support"
+        actions={
+          <div className="flex items-center gap-2">
+            <button
+              onClick={loadData}
+              className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 bg-white border border-slate-300 rounded text-slate-700 hover:bg-slate-50"
+            >
+              <RefreshCw className="w-3.5 h-3.5" /> Refresh
+            </button>
+            <button
+              onClick={handleExportDashboardCsv}
+              className="inline-flex items-center gap-1.5 text-xs px-3 py-1.5 bg-white border border-slate-300 rounded text-slate-700 hover:bg-slate-50 shadow-sm"
+            >
+              <Download className="w-3.5 h-3.5" /> Export Dashboard
+            </button>
+          </div>
+        }
       />
 
       <FilterBar>
@@ -113,33 +182,34 @@ export default function DashboardPage() {
           { value: 'Submitted', label: 'Submitted' },
           { value: 'Under Scrutiny', label: 'Under Scrutiny' },
           { value: 'Approved', label: 'Approved' },
+          { value: 'Notification Issued', label: 'Notification Issued' },
+          { value: 'Compensation Pending', label: 'Compensation Pending' },
           { value: 'Delayed', label: 'Delayed' },
           { value: 'Completed', label: 'Completed' },
         ]} />
-        <span className="text-xs text-slate-400 ml-auto">Last updated: 27-Aug-2026 09:42 IST</span>
       </FilterBar>
 
       {/* KPI Cards */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mb-4">
-        <KpiCard label="Total Projects" value={kpis.totalProjects} icon={Building2} color="#1e3a5f" trend="+3 this month" trendDir="up" lastUpdated="09:42" />
-        <KpiCard label="Land Proposed" value={kpis.landProposed.toLocaleString()} unit="ha" icon={MapPin} color="#2b6cb0" trend="+1,240 ha" trendDir="up" lastUpdated="09:42" />
-        <KpiCard label="Land Notified" value={kpis.landNotified.toLocaleString()} unit="ha" icon={FileCheck} color="#2c7a7b" trend={`${Math.round((kpis.landNotified / kpis.landProposed) * 100)}% of proposed`} trendDir="up" lastUpdated="09:42" />
-        <KpiCard label="Land Acquired" value={kpis.landAcquired.toLocaleString()} unit="ha" icon={MapPin} color="#22543d" trend={`${Math.round((kpis.landAcquired / kpis.landProposed) * 100)}% of proposed`} trendDir="up" lastUpdated="09:42" />
-        <KpiCard label="Compensation Assessed" value={`₹${kpis.compAssessed.toLocaleString()}`} unit="Cr" icon={IndianRupee} color="#744210" trend="+₹86 Cr" trendDir="up" lastUpdated="09:42" />
-        <KpiCard label="Compensation Disbursed" value={`₹${kpis.compDisbursed.toLocaleString()}`} unit="Cr" icon={IndianRupee} color="#22543d" trend={`${Math.round((kpis.compDisbursed / kpis.compAssessed) * 100)}% of assessed`} trendDir="up" lastUpdated="09:42" />
-        <KpiCard label="Affected Families" value={kpis.affectedFamilies.toLocaleString()} icon={Users} color="#2b6cb0" trend="+47" trendDir="up" lastUpdated="09:42" />
-        <KpiCard label="Displaced Families" value={kpis.displacedFamilies.toLocaleString()} icon={Users} color="#dd6b20" trend="+12" trendDir="up" lastUpdated="09:42" />
-        <KpiCard label="Possession Completed" value={kpis.possessionCompleted} icon={KeyRound} color="#22543d" trend={`${Math.round((kpis.possessionCompleted / kpis.totalProjects) * 100)}% of projects`} trendDir="up" lastUpdated="09:42" />
-        <KpiCard label="R&R Completed" value={kpis.rrCompleted} icon={HeartHandshake} color="#2c7a7b" trend={`${Math.round((kpis.rrCompleted / kpis.totalProjects) * 100)}% of projects`} trendDir="up" lastUpdated="09:42" />
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+        <KpiCard label="Total Projects" value={kpis.totalProjects} icon={Building2} color="#1e3a5f" trend="+3 this month" trendDir="up" />
+        <KpiCard label="Land Proposed" value={kpis.landProposed.toLocaleString()} unit="ha" icon={MapPin} color="#2b6cb0" trend="+1,240 ha" trendDir="up" />
+        <KpiCard label="Land Notified" value={kpis.landNotified.toLocaleString()} unit="ha" icon={FileCheck} color="#2c7a7b" trend={`${kpis.landProposed ? Math.round((kpis.landNotified / kpis.landProposed) * 100) : 0}% of proposed`} trendDir="up" />
+        <KpiCard label="Land Acquired" value={kpis.landAcquired.toLocaleString()} unit="ha" icon={MapPin} color="#22543d" trend={`${kpis.landProposed ? Math.round((kpis.landAcquired / kpis.landProposed) * 100) : 0}% of proposed`} trendDir="up" />
+        <KpiCard label="Compensation Assessed" value={`₹${kpis.compAssessed.toLocaleString()}`} unit="Cr" icon={IndianRupee} color="#744210" trend="+₹86 Cr" trendDir="up" />
+        <KpiCard label="Compensation Disbursed" value={`₹${kpis.compDisbursed.toLocaleString()}`} unit="Cr" icon={IndianRupee} color="#22543d" trend={`${kpis.compAssessed ? Math.round((kpis.compDisbursed / kpis.compAssessed) * 100) : 0}% of assessed`} trendDir="up" />
+        <KpiCard label="Affected Families" value={kpis.affectedFamilies.toLocaleString()} icon={Users} color="#2b6cb0" trend="+47" trendDir="up" />
+        <KpiCard label="Displaced Families" value={kpis.displacedFamilies.toLocaleString()} icon={Users} color="#dd6b20" trend="+12" trendDir="up" />
+        <KpiCard label="Possession Completed" value={kpis.possessionCompleted} icon={KeyRound} color="#22543d" trend={`${kpis.totalProjects ? Math.round((kpis.possessionCompleted / kpis.totalProjects) * 100) : 0}% of projects`} trendDir="up" />
+        <KpiCard label="R&R Completed" value={kpis.rrCompleted} icon={HeartHandshake} color="#2c7a7b" trend={`${kpis.totalProjects ? Math.round((kpis.rrCompleted / kpis.totalProjects) * 100) : 0}% of projects`} trendDir="up" />
       </div>
 
       {/* Charts */}
-      <div className="grid lg:grid-cols-2 gap-4 mb-4">
-        <Card title="State-wise Acquisition Progress (hectares)">
-          <ResponsiveContainer width="100%" height={280}>
-            <BarChart data={stateData} margin={{ top: 5, right: 10, left: 0, bottom: 60 }}>
+      <div className="grid lg:grid-cols-2 gap-4">
+        <Card title="State-wise Land Acquisition Status (hectares)">
+          <ResponsiveContainer width="100%" height={260}>
+            <BarChart data={stateData} margin={{ top: 5, right: 10, left: 0, bottom: 40 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
-              <XAxis dataKey="state" angle={-35} textAnchor="end" height={70} tick={{ fontSize: 11 }} />
+              <XAxis dataKey="state" angle={-25} textAnchor="end" height={50} tick={{ fontSize: 11 }} />
               <YAxis tick={{ fontSize: 11 }} />
               <Tooltip contentStyle={{ fontSize: 12, borderRadius: 4, border: '1px solid #e2e8f0' }} />
               <Legend wrapperStyle={{ fontSize: 11 }} />
@@ -151,9 +221,9 @@ export default function DashboardPage() {
         </Card>
 
         <Card title="Project Category Distribution">
-          <ResponsiveContainer width="100%" height={280}>
+          <ResponsiveContainer width="100%" height={260}>
             <PieChart>
-              <Pie data={typeData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={90} label={(e: any) => `${e.name}: ${e.value}`} labelLine={false} fontSize={11}>
+              <Pie data={typeData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={85} label={(e: any) => `${e.name}: ${e.value}`} labelLine={false} fontSize={11}>
                 {typeData.map((_, i) => <Cell key={i} fill={COLORS[i % COLORS.length]} />)}
               </Pie>
               <Tooltip contentStyle={{ fontSize: 12, borderRadius: 4 }} />
@@ -163,12 +233,12 @@ export default function DashboardPage() {
         </Card>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-4 mb-4">
-        <Card title="Acquisition Status Flow" className="lg:col-span-2">
-          <ResponsiveContainer width="100%" height={240}>
+      <div className="grid lg:grid-cols-3 gap-4">
+        <Card title="Acquisition Stage Flow" className="lg:col-span-2">
+          <ResponsiveContainer width="100%" height={230}>
             <BarChart data={stageData} margin={{ top: 5, right: 10, left: 0, bottom: 5 }}>
               <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
-              <XAxis dataKey="stage" tick={{ fontSize: 10 }} angle={-20} textAnchor="end" height={50} />
+              <XAxis dataKey="stage" tick={{ fontSize: 10 }} angle={-20} textAnchor="end" height={45} />
               <YAxis tick={{ fontSize: 11 }} />
               <Tooltip contentStyle={{ fontSize: 12, borderRadius: 4 }} />
               <Bar dataKey="count" fill="#1e3a5f" radius={[2, 2, 0, 0]} />
@@ -177,9 +247,9 @@ export default function DashboardPage() {
         </Card>
 
         <Card title="Compensation Overview">
-          <ResponsiveContainer width="100%" height={240}>
+          <ResponsiveContainer width="100%" height={230}>
             <PieChart>
-              <Pie data={compData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={75} label={(e: any) => `${e.name}: ${e.value}`} labelLine={false} fontSize={10}>
+              <Pie data={compData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={70} label={(e: any) => `${e.name}: ${e.value}`} labelLine={false} fontSize={10}>
                 {compData.map((d, i) => <Cell key={i} fill={d.color} />)}
               </Pie>
               <Tooltip contentStyle={{ fontSize: 12, borderRadius: 4 }} />
@@ -188,11 +258,11 @@ export default function DashboardPage() {
         </Card>
       </div>
 
-      <div className="grid lg:grid-cols-3 gap-4 mb-4">
+      <div className="grid lg:grid-cols-3 gap-4">
         <Card title="R&R Overview">
           <ResponsiveContainer width="100%" height={220}>
             <PieChart>
-              <Pie data={rrData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={70} label={(e: any) => `${e.name}: ${e.value}`} labelLine={false} fontSize={10}>
+              <Pie data={rrData} dataKey="value" nameKey="name" cx="50%" cy="50%" outerRadius={68} label={(e: any) => `${e.name}: ${e.value}`} labelLine={false} fontSize={10}>
                 {rrData.map((d, i) => <Cell key={i} fill={d.color} />)}
               </Pie>
               <Tooltip contentStyle={{ fontSize: 12, borderRadius: 4 }} />
@@ -214,14 +284,14 @@ export default function DashboardPage() {
                 {filtered.slice(0, 6).map((p) => (
                   <tr key={p.id} className="hover:bg-slate-50">
                     <td className="px-2 py-2 font-mono text-slate-600 whitespace-nowrap">{p.id}</td>
-                    <td className="px-2 py-2 text-slate-700 max-w-[160px] truncate">{p.name}</td>
+                    <td className="px-2 py-2 text-slate-700 max-w-[160px] truncate font-medium">{p.name}</td>
                     <td className="px-2 py-2 text-slate-600 whitespace-nowrap">{p.state}</td>
                     <td className="px-2 py-2 text-slate-600 whitespace-nowrap">{p.stage}</td>
                     <td className="px-2 py-2"><div className="w-16"><ProgressBar value={p.acquisitionPct} color="bg-blue-600" height="h-1.5" /></div></td>
                     <td className="px-2 py-2"><div className="w-16"><ProgressBar value={p.compensationPct} color="bg-amber-500" height="h-1.5" /></div></td>
                     <td className="px-2 py-2"><div className="w-16"><ProgressBar value={p.possessionPct} color="bg-teal-600" height="h-1.5" /></div></td>
                     <td className="px-2 py-2"><div className="w-16"><ProgressBar value={p.rrPct} color="bg-green-600" height="h-1.5" /></div></td>
-                    <td className="px-2 py-2"><StatusBadge status={p.status} /></td>
+                    <td className="px-2 py-2 whitespace-nowrap"><StatusBadge status={p.status} /></td>
                   </tr>
                 ))}
               </tbody>
@@ -231,18 +301,18 @@ export default function DashboardPage() {
       </div>
 
       {/* Critical Alerts */}
-      <Card title="Critical Alerts & Escalations" actions={<span className="text-xs text-slate-400">{criticalAlerts.length} active</span>}>
+      <Card title="Critical Bottleneck Alerts & Escalations" actions={<span className="text-xs text-slate-500 font-medium">{criticalAlerts.length} active escalations</span>}>
         <div className="space-y-2">
           {criticalAlerts.map((alert) => (
-            <div key={alert.id} className="flex items-center gap-3 p-2 border border-slate-200 rounded hover:bg-slate-50">
+            <div key={alert.id} className="flex items-center gap-3 p-2.5 border border-slate-200 rounded-lg hover:bg-slate-50 transition-colors">
               <AlertTriangle className={`w-4 h-4 shrink-0 ${alert.severity === 'Critical' ? 'text-red-600' : 'text-orange-500'}`} />
               <div className="flex-1 min-w-0">
-                <p className="text-xs font-medium text-slate-700">{alert.type} — {alert.projectName}</p>
+                <p className="text-xs font-semibold text-slate-800">{alert.type} — {alert.projectName}</p>
                 <p className="text-xs text-slate-500 truncate">{alert.description}</p>
               </div>
               <StatusBadge status={alert.severity} />
               <StatusBadge status={alert.escalationLevel} />
-              <span className="text-xs text-slate-400 whitespace-nowrap">{alert.createdDate}</span>
+              <span className="text-[10px] text-slate-400 whitespace-nowrap font-mono">{alert.createdDate}</span>
             </div>
           ))}
         </div>

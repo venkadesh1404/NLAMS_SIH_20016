@@ -48,3 +48,33 @@ input[type="range"]::-moz-range-thumb {
   cursor: pointer;
   border: none;
 }
+
+/* Print Styles */
+@media print {
+  header, aside, .no-print, button, .filter-bar, input, select {
+    display: none !important;
+  }
+
+  body, main {
+    background: white !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    color: black !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .card, table {
+    box-shadow: none !important;
+    border-color: #cbd5e1 !important;
+    page-break-inside: avoid;
+  }
+
+  @page {
+    margin: 1.5cm;
+    size: auto;
+  }
+}
+

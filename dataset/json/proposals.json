@@ -1,0 +1,230 @@
+[
+  {
+    "id": "NLAMS-PROP-2026-004",
+    "projectName": "Erode-Tiruppur Fast Corridor Bypass",
+    "submittedBy": "Kavya Krishnan",
+    "submittedByEmail": "pwd@nlams.gov.in",
+    "department": "Highways & Infrastructure Planning",
+    "agency": "PWD Tamil Nadu",
+    "projectType": "Highways",
+    "state": "Tamil Nadu",
+    "district": "Tiruppur",
+    "landRequired": 65.0,
+    "estimatedCost": 1850.0,
+    "purpose": "Updated corridor alignment with verified survey subdivision numbers.",
+    "targetDate": "2028-10-31",
+    "documents": [
+      {
+        "id": "DOC-T001",
+        "name": "DPR_Erode_Tiruppur.pdf",
+        "type": "DPR",
+        "size": "3.5 MB",
+        "uploadDate": "2026-08-28"
+      }
+    ],
+    "createdDate": "2026-08-28",
+    "updatedDate": "2026-08-28",
+    "status": "APPROVED",
+    "currentStage": "Notification",
+    "assignedAuthority": "State Project Director (PWD)",
+    "assignedRole": "state_gov",
+    "remarks": "Initial proposal created.",
+    "timeline": [
+      {
+        "action": "Proposal Created",
+        "by": "Kavya Krishnan",
+        "role": "pwd_agency",
+        "timestamp": "2026-08-28 03:11",
+        "notes": "Draft proposal initialized with attached preliminary documentation."
+      },
+      {
+        "action": "Proposal Submitted",
+        "by": "Kavya Krishnan",
+        "role": "pwd_agency",
+        "timestamp": "2026-08-28 03:11",
+        "notes": "Formal submission for revenue boundary verification."
+      },
+      {
+        "action": "Proposal Sent Back",
+        "by": "Ramesh Iyer",
+        "role": "district_authority",
+        "timestamp": "2026-08-28 03:11",
+        "notes": "Village Survey Sheet #44 lacks patta subdivision markings. Please attach updated extract."
+      },
+      {
+        "action": "Proposal Resubmitted",
+        "by": "Kavya Krishnan",
+        "role": "pwd_agency",
+        "timestamp": "2026-08-28 03:11",
+        "notes": "Attached updated revenue patta extract for Sheet #44."
+      },
+      {
+        "action": "Proposal Verified",
+        "by": "Ramesh Iyer",
+        "role": "district_authority",
+        "timestamp": "2026-08-28 03:11",
+        "notes": "All revenue boundaries authenticated."
+      },
+      {
+        "action": "Proposal Approved",
+        "by": "Dr. S. Radhakrishnan",
+        "role": "state_gov",
+        "timestamp": "2026-08-28 03:11",
+        "notes": "Administrative sanction granted. Land acquisition proceeding sanctioned."
+      }
+    ],
+    "sendBackReason": null,
+    "projectId": "PRJ-051"
+  },
+  {
+    "id": "NLAMS-PROP-2026-001",
+    "projectName": "Salem-Coimbatore Industrial Freight Corridor Link",
+    "submittedBy": "Kavya Krishnan",
+    "submittedByEmail": "pwd@nlams.gov.in",
+    "department": "Infrastructure Engineering Cell",
+    "agency": "PWD Tamil Nadu",
+    "projectType": "Industrial Corridor",
+    "state": "Tamil Nadu",
+    "district": "Coimbatore",
+    "landRequired": 75.5,
+    "estimatedCost": 2850.0,
+    "purpose": "Four-lane dedicated logistics connector linking upcoming defense industrial hub to national highway network across 3 revenue villages.",
+    "targetDate": "2028-11-30",
+    "documents": [
+      {
+        "id": "DOC-P001",
+        "name": "DPR_Salem_Coimbatore_Link.pdf",
+        "type": "DPR",
+        "size": "4.2 MB",
+        "uploadDate": "2026-08-20"
+      },
+      {
+        "id": "DOC-P002",
+        "name": "Cadastral_Map_Sheet_142.pdf",
+        "type": "Land Records",
+        "size": "2.8 MB",
+        "uploadDate": "2026-08-20"
+      }
+    ],
+    "createdDate": "2026-08-20",
+    "updatedDate": "2026-08-21",
+    "status": "SUBMITTED",
+    "currentStage": "Scrutiny",
+    "assignedAuthority": "District Collector & Magistrate",
+    "assignedRole": "district_authority",
+    "remarks": "Submitted for revenue boundary verification and preliminary SIA sanction.",
+    "timeline": [
+      {
+        "action": "Proposal Created",
+        "by": "Kavya Krishnan",
+        "role": "PWD Agency",
+        "timestamp": "2026-08-20 10:15",
+        "notes": "Draft proposal initialized with DPR and survey boundary maps."
+      },
+      {
+        "action": "Proposal Submitted",
+        "by": "Kavya Krishnan",
+        "role": "PWD Agency",
+        "timestamp": "2026-08-21 14:30",
+        "notes": "Formal submission forwarded to District Authority Coimbatore."
+      }
+    ]
+  },
+  {
+    "id": "NLAMS-PROP-2026-002",
+    "projectName": "Tirunelveli Outer Ring Bypass Phase 2",
+    "submittedBy": "Kavya Krishnan",
+    "submittedByEmail": "pwd@nlams.gov.in",
+    "department": "Highways & Infrastructure",
+    "agency": "PWD Tamil Nadu",
+    "projectType": "Highways",
+    "state": "Tamil Nadu",
+    "district": "Tirunelveli",
+    "landRequired": 120.0,
+    "estimatedCost": 4500.0,
+    "purpose": "Bypass highway corridor to relieve traffic congestion through Tirunelveli urban area.",
+    "targetDate": "2029-03-31",
+    "documents": [
+      {
+        "id": "DOC-P003",
+        "name": "Tirunelveli_Bypass_Feasibility.pdf",
+        "type": "Project Proposal",
+        "size": "3.1 MB",
+        "uploadDate": "2026-08-18"
+      }
+    ],
+    "createdDate": "2026-08-18",
+    "updatedDate": "2026-08-25",
+    "status": "UNDER_SCRUTINY",
+    "currentStage": "Approval",
+    "assignedAuthority": "State Project Director (PWD)",
+    "assignedRole": "state_gov",
+    "remarks": "District verification completed. Revenue records authenticated.",
+    "timeline": [
+      {
+        "action": "Proposal Created",
+        "by": "Kavya Krishnan",
+        "role": "PWD Agency",
+        "timestamp": "2026-08-18 09:30"
+      },
+      {
+        "action": "Proposal Submitted",
+        "by": "Kavya Krishnan",
+        "role": "PWD Agency",
+        "timestamp": "2026-08-19 11:20"
+      },
+      {
+        "action": "Proposal Verified",
+        "by": "Ramesh Iyer",
+        "role": "District Authority",
+        "timestamp": "2026-08-25 16:45",
+        "notes": "Cadastral field survey and joint revenue inspection completed without boundary disputes. Forwarded for State Approval."
+      }
+    ]
+  },
+  {
+    "id": "NLAMS-PROP-2026-003",
+    "projectName": "Madurai Urban Elevated Transit Link",
+    "submittedBy": "Kavya Krishnan",
+    "submittedByEmail": "pwd@nlams.gov.in",
+    "department": "Urban Transport Division",
+    "agency": "PWD Tamil Nadu",
+    "projectType": "Urban Development",
+    "state": "Tamil Nadu",
+    "district": "Madurai",
+    "landRequired": 35.0,
+    "estimatedCost": 1800.0,
+    "purpose": "Elevated rapid transit corridor across congested market intersections.",
+    "targetDate": "2028-06-30",
+    "documents": [],
+    "createdDate": "2026-08-22",
+    "updatedDate": "2026-08-23",
+    "status": "SENT_BACK",
+    "currentStage": "Proposal",
+    "assignedAuthority": "Superintending Engineer (PWD)",
+    "assignedRole": "pwd_agency",
+    "sendBackReason": "Land ownership survey in Ward 14 lacks sub-division survey patta numbers. Please attach updated village revenue extract.",
+    "remarks": "Requires resubmission with updated land registry extract.",
+    "timeline": [
+      {
+        "action": "Proposal Created",
+        "by": "Kavya Krishnan",
+        "role": "PWD Agency",
+        "timestamp": "2026-08-22 11:00"
+      },
+      {
+        "action": "Proposal Submitted",
+        "by": "Kavya Krishnan",
+        "role": "PWD Agency",
+        "timestamp": "2026-08-22 15:40"
+      },
+      {
+        "action": "Proposal Sent Back",
+        "by": "Ramesh Iyer",
+        "role": "District Authority",
+        "timestamp": "2026-08-23 10:15",
+        "notes": "Land ownership survey in Ward 14 lacks sub-division survey patta numbers. Please attach updated village revenue extract."
+      }
+    ]
+  }
+]

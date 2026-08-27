@@ -1,7 +1,10 @@
-import { useState, useMemo } from 'react';
-import { DATA, STATES } from '@/data/mockData';
-import { PageHeader, Card, FilterBar, Select, StatusBadge, KpiCard, ProgressBar } from '@/components/ui';
-import { HeartHandshake, Home, Briefcase, Landmark, Banknote, Building } from 'lucide-react';
+import { useState, useMemo, useEffect } from 'react';
+import { ApiService } from '@/services/apiService';
+import { STATES } from '@/data/mockData';
+import { PageHeader, Card, FilterBar, Select, StatusBadge, Button, KpiCard, ProgressBar } from '@/components/ui';
+import { HeartHandshake, Home, Briefcase, Landmark, Banknote, Building, Download } from 'lucide-react';
+import { exportToCsv } from '@/utils/exportUtils';
+import type { AffectedFamily, Project } from '@/types';
 
 const BENEFIT_TYPES = [
   { key: 'housing', label: 'Housing Assistance', icon: Home },
@@ -12,9 +15,30 @@ const BENEFIT_TYPES = [
 ];
 
 export default function RehabilitationPage() {
-  const { families, projects } = DATA;
+  const [families, setFamilies] = useState<AffectedFamily[]>([]);
+  const [projects, setProjects] = useState<Project[]>([]);
+  const [loading, setLoading] = useState(true);
   const [stateFilter, setStateFilter] = useState('');
   const [statusFilter, setStatusFilter] = useState('');
+
+  useEffect(() => {
+    async function loadData() {
+      setLoading(true);
+      try {
+        const [fams, projs] = await Promise.all([
+          ApiService.getFamilies(),
+          ApiService.getProjects(),
+        ]);
+        setFamilies(fams);
+        setProjects(projs);
+      } catch (e) {
+        console.error('Failed to load R&R records', e);
+      } finally {
+        setLoading(false);
+      }
+    }
+    loadData();
+  }, []);
 
   const filtered = useMemo(() => {
     return families.filter((f) => {
@@ -32,16 +56,37 @@ export default function RehabilitationPage() {
   const pending = filtered.filter((f) => ['Not Started', 'Eligible'].includes(f.rrStatus)).length;
   const displaced = filtered.filter((f) => f.displacementStatus !== 'Not Displaced').length;
 
-  return (
-    <div>
-      <PageHeader title="Rehabilitation & Resettlement" subtitle="Track R&R eligibility, benefits, and progress for displaced families" />
+  const handleExportCsv = () => {
+    exportToCsv(
+      filtered,
+      `NLAMS_Rehabilitation_Progress_${new Date().toISOString().split('T')[0]}`,
+      [
+        { key: 'id', label: 'Family ID' },
+        { key: 'projectId', label: 'Project ID' },
+        { key: 'district', label: 'District' },
+        { key: 'village', label: 'Village' },
+        { key: 'displacementStatus', label: 'Displacement' },
+        { key: 'rrEligibility', label: 'R&R Eligible', formatter: (val) => val ? 'Yes' : 'No' },
+        { key: 'rrBenefit', label: 'R&R Benefit Package' },
+        { key: 'rrStatus', label: 'R&R Status' },
+      ]
+    );
+  };
 
-      <div className="grid grid-cols-2 md:grid-cols-5 gap-3 mb-4">
+  return (
+    <div className="space-y-4">
+      <PageHeader
+        title="Rehabilitation & Resettlement Monitoring"
+        subtitle="Track R&R eligibility packages, socio-economic rehabilitation benefits, and resettlement progress"
+        actions={<Button variant="outline" size="sm" icon={Download} onClick={handleExportCsv}>Export CSV</Button>}
+      />
+
+      <div className="grid grid-cols-2 md:grid-cols-5 gap-3">
         <KpiCard label="Total Affected" value={filtered.length} icon={HeartHandshake} color="#2b6cb0" />
         <KpiCard label="R&R Eligible" value={eligible} icon={HeartHandshake} color="#2c7a7b" />
         <KpiCard label="R&R Completed" value={completed} icon={HeartHandshake} color="#22543d" />
         <KpiCard label="R&R Pending" value={pending} icon={HeartHandshake} color="#dd6b20" />
-        <KpiCard label="Displaced" value={displaced} icon={HeartHandshake} color="#dc2626" />
+        <KpiCard label="Displaced Families" value={displaced} icon={HeartHandshake} color="#dc2626" />
       </div>
 
       <FilterBar>
@@ -52,8 +97,8 @@ export default function RehabilitationPage() {
         ]} />
       </FilterBar>
 
-      <div className="grid lg:grid-cols-2 gap-4 mb-4">
-        <Card title="R&R Benefit Distribution">
+      <div className="grid lg:grid-cols-2 gap-4">
+        <Card title="R&R Benefit Package Distribution">
           <div className="space-y-3">
             {BENEFIT_TYPES.map((b) => {
               const count = filtered.filter((f) => f.rrBenefit.includes(b.label.replace(' Assistance', '').replace(' Support', ''))).length;
@@ -74,7 +119,7 @@ export default function RehabilitationPage() {
           </div>
         </Card>
 
-        <Card title="Resettlement Progress">
+        <Card title="Resettlement Progress Breakdown">
           <div className="space-y-3">
             {(['Not Started', 'Eligible', 'In Progress', 'Completed', 'Disputed'] as const).map((s) => {
               const count = filtered.filter((f) => f.rrStatus === s).length;
@@ -93,28 +138,40 @@ export default function RehabilitationPage() {
         </Card>
       </div>
 
-      <Card title="R&R Case Tracking">
-        <div className="overflow-x-auto">
-          <table className="w-full text-xs">
-            <thead className="bg-slate-50 border-b border-slate-200"><tr>{['Family ID', 'Project', 'Village', 'Displacement', 'R&R Eligible', 'R&R Benefit', 'R&R Status'].map((h) => <th key={h} className="text-left px-3 py-2 font-semibold text-slate-600 whitespace-nowrap">{h}</th>)}</tr></thead>
-            <tbody className="divide-y divide-slate-100">
-              {filtered.slice(0, 20).map((f) => {
-                const proj = projects.find((p) => p.id === f.projectId);
-                return (
-                  <tr key={f.id} className="hover:bg-slate-50">
-                    <td className="px-3 py-2 font-mono text-slate-600">{f.id}</td>
-                    <td className="px-3 py-2 text-slate-700 max-w-[140px] truncate">{proj?.name || f.projectId}</td>
-                    <td className="px-3 py-2 text-slate-600">{f.village}</td>
-                    <td className="px-3 py-2"><StatusBadge status={f.displacementStatus} /></td>
-                    <td className="px-3 py-2 text-slate-600">{f.rrEligibility ? 'Yes' : 'No'}</td>
-                    <td className="px-3 py-2 text-slate-600">{f.rrBenefit}</td>
-                    <td className="px-3 py-2"><StatusBadge status={f.rrStatus} /></td>
-                  </tr>
-                );
-              })}
-            </tbody>
-          </table>
-        </div>
+      <Card title="R&R Individual Case Tracking">
+        {loading ? (
+          <div className="p-8 text-center text-xs text-slate-500">Loading case records...</div>
+        ) : (
+          <div className="overflow-x-auto">
+            <table className="w-full text-xs">
+              <thead className="bg-slate-50 border-b border-slate-200">
+                <tr>
+                  {['Family ID', 'Project', 'Village', 'Displacement', 'R&R Eligible', 'R&R Benefit', 'R&R Status'].map((h) => (
+                    <th key={h} className="text-left px-3 py-2 font-semibold text-slate-600 whitespace-nowrap">{h}</th>
+                  ))}
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-100">
+                {filtered.slice(0, 30).map((f) => {
+                  const proj = projects.find((p) => p.id === f.projectId);
+                  return (
+                    <tr key={f.id} className="hover:bg-slate-50 transition-colors">
+                      <td className="px-3 py-2 font-mono font-medium text-slate-700 whitespace-nowrap">{f.id}</td>
+                      <td className="px-3 py-2 text-slate-800 font-medium max-w-[140px] truncate" title={proj?.name || f.projectId}>
+                        {proj?.name || f.projectId}
+                      </td>
+                      <td className="px-3 py-2 text-slate-600 whitespace-nowrap">{f.village}</td>
+                      <td className="px-3 py-2 whitespace-nowrap"><StatusBadge status={f.displacementStatus} /></td>
+                      <td className="px-3 py-2 text-slate-700 whitespace-nowrap font-medium">{f.rrEligibility ? 'Yes' : 'No'}</td>
+                      <td className="px-3 py-2 text-slate-600 max-w-[140px] truncate" title={f.rrBenefit}>{f.rrBenefit}</td>
+                      <td className="px-3 py-2 whitespace-nowrap"><StatusBadge status={f.rrStatus} /></td>
+                    </tr>
+                  );
+                })}
+              </tbody>
+            </table>
+          </div>
+        )}
       </Card>
     </div>
   );

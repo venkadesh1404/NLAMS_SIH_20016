@@ -268,3 +268,64 @@ export interface RiskPredictionInput {
   possession_delay_days: number;
   rr_pending_percentage: number;
 }
+
+export type ProposalStatus =
+  | 'DRAFT'
+  | 'SUBMITTED'
+  | 'UNDER_VERIFICATION'
+  | 'VERIFIED'
+  | 'UNDER_SCRUTINY'
+  | 'APPROVED'
+  | 'REJECTED'
+  | 'SENT_BACK'
+  | 'COMPLETED';
+
+export interface ProposalTimelineEvent {
+  action: string;
+  by: string;
+  role: string;
+  timestamp: string;
+  notes?: string;
+}
+
+export interface Proposal {
+  id: string; // e.g. NLAMS-PROP-2026-001
+  projectName: string;
+  submittedBy: string;
+  submittedByEmail?: string;
+  department: string;
+  agency: string;
+  projectType: ProjectType;
+  state: string;
+  district: string;
+  landRequired: number;
+  estimatedCost: number;
+  purpose: string;
+  targetDate: string;
+  documents: { id: string; name: string; type: string; size: string; uploadDate: string }[];
+  createdDate: string;
+  updatedDate: string;
+  status: ProposalStatus;
+  currentStage: ProjectStage;
+  assignedAuthority: string;
+  assignedRole: UserRole;
+  remarks?: string;
+  rejectionReason?: string;
+  sendBackReason?: string;
+  timeline: ProposalTimelineEvent[];
+  projectId?: string;
+}
+
+export interface SystemNotification {
+  id: string;
+  title: string;
+  message: string;
+  type: 'info' | 'warning' | 'error' | 'success';
+  recipientRole?: UserRole | 'all';
+  recipientEmail?: string;
+  targetModule: 'proposals' | 'projects' | 'compensation' | 'possession' | 'rehabilitation' | 'alerts' | 'documents';
+  targetId?: string;
+  isRead: boolean;
+  timestamp: string;
+}
+
